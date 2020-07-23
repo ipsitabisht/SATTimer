@@ -15,36 +15,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wMn-O8-pBu">
-                                <rect key="frame" x="40" y="592" width="334" height="230"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zkV-SA-kG8">
+                                <rect key="frame" x="117" y="535" width="181" height="69.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Set up study timer below:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4z-zQ-M1E">
+                                <rect key="frame" x="45" y="430" width="326" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="cam-QL-6VQ">
+                                <rect key="frame" x="70" y="680" width="274" height="112"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oq5-RE-iGj">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="30"/>
-                                        <state key="normal" title="Start"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SvV-qm-726">
+                                        <rect key="frame" x="0.0" y="0.0" width="274" height="36"/>
+                                        <color key="backgroundColor" red="0.57381357552762868" green="0.73838249298057279" blue="0.79365689766839376" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0cr-6B-czt"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmd-af-2Hz">
-                                        <rect key="frame" x="0.0" y="50" width="334" height="30"/>
-                                        <state key="normal" title="Pause"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ke-Mf-HfL">
-                                        <rect key="frame" x="0.0" y="100" width="334" height="30"/>
-                                        <state key="normal" title="Reset"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQI-Us-mhg">
-                                        <rect key="frame" x="0.0" y="150" width="334" height="30"/>
-                                        <state key="normal" title="+5"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOn-Tx-hth">
-                                        <rect key="frame" x="0.0" y="200" width="334" height="30"/>
-                                        <state key="normal" title="-5"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uk2-tJ-JSX">
+                                        <rect key="frame" x="0.0" y="76" width="274" height="36"/>
+                                        <color key="backgroundColor" red="0.63475614790000001" green="0.77609932420000005" blue="0.8266164064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Pause">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwS-L5-mpI">
-                                <rect key="frame" x="158.5" y="418" width="97" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="xjl-jf-bn5"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idy-PM-p1T">
+                                <rect key="frame" x="159" y="206" width="97" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,25 +63,20 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wMn-O8-pBu" secondAttribute="trailing" constant="40" id="JpQ-BD-pay"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wMn-O8-pBu" secondAttribute="bottom" constant="40" id="KGg-ht-c3M"/>
-                            <constraint firstItem="PwS-L5-mpI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VMT-2E-N7M"/>
-                            <constraint firstItem="wMn-O8-pBu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ge7-16-cla"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cam-QL-6VQ" secondAttribute="trailing" constant="70" id="7oj-ij-RWb"/>
+                            <constraint firstItem="cam-QL-6VQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="K6Y-XT-Tzj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cam-QL-6VQ" secondAttribute="bottom" constant="70" id="YDO-Dv-D7F"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="addSecButton" destination="mQI-Us-mhg" id="uxB-g5-ppD"/>
-                        <outlet property="minusSecButton" destination="HOn-Tx-hth" id="U9Y-Xr-dnl"/>
-                        <outlet property="pauseButton" destination="pmd-af-2Hz" id="I4r-aO-2Ll"/>
-                        <outlet property="resetButton" destination="7ke-Mf-HfL" id="8AC-x0-GSO"/>
-                        <outlet property="startButton" destination="oq5-RE-iGj" id="mSn-uQ-Qx7"/>
-                        <outlet property="timerLabel" destination="PwS-L5-mpI" id="feA-dG-7vd"/>
+                        <outlet property="textField" destination="zkV-SA-kG8" id="Btg-DG-Vyx"/>
+                        <outlet property="timerLabel" destination="idy-PM-p1T" id="sTX-MT-sUm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="100"/>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
         </scene>
     </scenes>
 </document>
