@@ -7,10 +7,10 @@ class ViewController: UIViewController {
 
     
     
-    @IBOutlet weak var timerLabel: UILabel!
-    @IBOutlet weak var textField: UITextField!
+
+   
     var timer = Timer()
-    var time = 0
+    var seconds = 60
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,30 +19,33 @@ class ViewController: UIViewController {
          
     }
 
-    /*@IBAction func startButton(_ sender: Any) {
-        //Make sure there arent any other timers running
-        timer.invalidate()
-        //Create the timer
-        timer = Timer.scheduledTimer(timeInterval:  1 , target: self ,
+    
+
+   /* @IBAction func startTime(_ sender: UIButton) {
+        
+        
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector( Action), userInfo: nil, repeats: true)
+      
+        
+        
         
     }*/
     
-
-    @IBAction func startTime(_ sender: UIButton) {
-        timer.invalidate()
-        if let newTime = textField.text{
-            timerLabel.text = newTime
+   /* @objc func Action(){
+        
+        seconds -= 1
+        
+        timerLabel.text = String(seconds)
+        
+        if(seconds == 0){
+            timer.invalidate()
         }
         
-        timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(ViewController.timeClass), userInfo: nil, repeats: true)
-      
-       
-        
-        
     }
+        
+    @IBAction func pauseButton(_ sender: Any) {
+        timer.invalidate()
+    }*/
     
-    @objc func timeClass(){
-        timerLabel.text =
-    }
     
 }

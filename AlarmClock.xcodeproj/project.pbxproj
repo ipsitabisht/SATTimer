@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16DFF4D124CB9DB4005DAA2B /* WritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DFF4D024CB9DB4005DAA2B /* WritingViewController.swift */; };
+		16DFF4D324CB9DC3005DAA2B /* NoCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DFF4D224CB9DC3005DAA2B /* NoCalcViewController.swift */; };
+		16DFF4D524CB9DCE005DAA2B /* CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DFF4D424CB9DCE005DAA2B /* CalcViewController.swift */; };
+		16DFF4D724CB9DD8005DAA2B /* EssayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DFF4D624CB9DD8005DAA2B /* EssayViewController.swift */; };
 		16FE895F24C9022D00C121A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FE895E24C9022D00C121A9 /* AppDelegate.swift */; };
 		16FE896124C9022D00C121A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FE896024C9022D00C121A9 /* SceneDelegate.swift */; };
 		16FE896324C9022D00C121A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FE896224C9022D00C121A9 /* ViewController.swift */; };
@@ -16,6 +20,7 @@
 		16FE896E24C9023000C121A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FE896C24C9023000C121A9 /* LaunchScreen.storyboard */; };
 		16FE897924C9023100C121A9 /* AlarmClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FE897824C9023100C121A9 /* AlarmClockTests.swift */; };
 		16FE898424C9023100C121A9 /* AlarmClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FE898324C9023100C121A9 /* AlarmClockUITests.swift */; };
+		16FE899224CB7F1900C121A9 /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FE899124CB7F1900C121A9 /* ReadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16DFF4D024CB9DB4005DAA2B /* WritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingViewController.swift; sourceTree = "<group>"; };
+		16DFF4D224CB9DC3005DAA2B /* NoCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoCalcViewController.swift; sourceTree = "<group>"; };
+		16DFF4D424CB9DCE005DAA2B /* CalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcViewController.swift; sourceTree = "<group>"; };
+		16DFF4D624CB9DD8005DAA2B /* EssayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssayViewController.swift; sourceTree = "<group>"; };
 		16FE895B24C9022D00C121A9 /* AlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FE895E24C9022D00C121A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16FE896024C9022D00C121A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +60,7 @@
 		16FE897F24C9023100C121A9 /* AlarmClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlarmClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FE898324C9023100C121A9 /* AlarmClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockUITests.swift; sourceTree = "<group>"; };
 		16FE898524C9023100C121A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16FE899124CB7F1900C121A9 /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,11 @@
 				16FE896C24C9023000C121A9 /* LaunchScreen.storyboard */,
 				16FE896F24C9023000C121A9 /* Info.plist */,
 				16FE896724C9022D00C121A9 /* AlarmClock.xcdatamodeld */,
+				16FE899124CB7F1900C121A9 /* ReadingViewController.swift */,
+				16DFF4D024CB9DB4005DAA2B /* WritingViewController.swift */,
+				16DFF4D224CB9DC3005DAA2B /* NoCalcViewController.swift */,
+				16DFF4D424CB9DCE005DAA2B /* CalcViewController.swift */,
+				16DFF4D624CB9DD8005DAA2B /* EssayViewController.swift */,
 			);
 			path = AlarmClock;
 			sourceTree = "<group>";
@@ -263,7 +278,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				16FE896924C9022D00C121A9 /* AlarmClock.xcdatamodeld in Sources */,
+				16DFF4D324CB9DC3005DAA2B /* NoCalcViewController.swift in Sources */,
+				16DFF4D724CB9DD8005DAA2B /* EssayViewController.swift in Sources */,
+				16DFF4D124CB9DB4005DAA2B /* WritingViewController.swift in Sources */,
 				16FE896324C9022D00C121A9 /* ViewController.swift in Sources */,
+				16FE899224CB7F1900C121A9 /* ReadingViewController.swift in Sources */,
+				16DFF4D524CB9DCE005DAA2B /* CalcViewController.swift in Sources */,
 				16FE895F24C9022D00C121A9 /* AppDelegate.swift in Sources */,
 				16FE896124C9022D00C121A9 /* SceneDelegate.swift in Sources */,
 			);
